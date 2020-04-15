@@ -1,0 +1,299 @@
+:root {
+  --bodyBg: #fff;
+  --menuBg: #f79992;
+  --progressBar: #54d1db;
+  --primary: #3dbd7d;
+  --secondary: #3ac7cf;
+  --cart: #fadb14;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  background-color: var(--bodyBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #fff1f0;
+  color: #ff7875;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 1rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  color: var(--primary) !important;
+}
+
+.form-add {
+  width: 55%;
+}
+
+.form-item {
+  margin: 5px 0;
+}
+
+.button-primary {
+  color: var(--bodyBg);
+  background: var(--primary);
+}
+
+.button-primary:hover {
+  background: #508a58;
+}
+
+.button-cart {
+  background: #fadb14 !important;
+  color: #000 !important;
+  font-size: 0.9rem !important;
+}
+
+.button-cart:hover,
+.button-cart:focus {
+  background: #fae870 !important;
+  color: rgb(128, 128, 128) !important;
+  border-color: #fae870 !important;
+}
+
+.button-upload:hover,
+.button-upload:focus {
+  color: #61c992 !important;
+  background-color: #fff;
+  border-color: #61c992 !important;
+}
+/* Typography */
+.title-secondary {
+  font-size: 1.6rem;
+  color: var(--secondary);
+}
+
+/* Menu */
+
+.menu {
+  background-color: var(--menuBg);
+  color: var(--bodyBg);
+}
+
+.menu-toggle-label {
+  display: none;
+  color: rgba(255, 255, 255, 0.65);
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.items-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sign-items-horizontal {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.items-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sign-items-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  height: 64px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-toggle-label {
+    display: flex;
+  }
+
+  .menu .main-menu {
+    display: none;
+  }
+}
+
+/* Card */
+
+.card-meta-top {
+  display: flex;
+  justify-content: space-between;
+}
+.card-brand {
+  display: inline;
+  font-size: 0.8rem;
+  font-weight: 400;
+  background: var(--primary);
+  color: var(--bodyBg);
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+
+.card-description {
+  margin: 0.3rem 0 0.2rem 0;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: light;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card-price {
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 0;
+}
+
+.card-more a {
+  color: #13c2c2;
+}
+
+/* Product Page */
+.product-container {
+  margin: 50px 0;
+  max-width: 800px;
+  /* height: 75vh; */
+  display: grid;
+  grid-template:
+    "img brand ."
+    "img title title"
+    "img price cart"
+    /* "img cart ." */
+    "img desc desc";
+}
+
+.product-img {
+  grid-area: img;
+}
+
+.product-img img {
+  max-width: 400px;
+}
+
+.product-brand {
+  grid-area: brand;
+}
+
+.product-title {
+  padding-bottom: 2rem;
+  grid-area: title;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bold;
+  grid-area: price;
+}
+
+.product-price p {
+  margin: 0;
+}
+
+.product-cart {
+  justify-self: end;
+  justify-content: center;
+  align-items: center;
+  grid-area: cart;
+}
+
+.product-description {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.45);
+  padding: 2rem 0;
+  grid-area: desc;
+}
+
+.product-description p {
+  margin-bottom: 2rem;
+}
+
+.product-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-vegan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 65px;
+}
+
+@media screen and (max-width: 800px) {
+  .product-container {
+    margin: 20px;
+    max-width: 600px;
+    display: grid;
+    grid-template:
+      "img img"
+      "brand brand"
+      "title title"
+      "price cart"
+      "desc desc";
+  }
+
+  .product-title {
+    padding-bottom: 0.5rem;
+  }
+
+  .form {
+    padding: 1rem 0;
+  }
+
+  .form-add {
+    width: 100%;
+  }
+}

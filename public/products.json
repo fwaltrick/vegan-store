@@ -1,0 +1,162 @@
+[
+  {
+    "brand": "Lily Lolo",
+    "name": "Mineral Blusher",
+    "price": 7.65,
+    "description": "Delicate & lightweight Mineral Blushes allowing buildable coverage for truly customisable colour. Soft and silky, shades are available in matte and subtle shimmer finishes to suit every look.",
+    "sku": "594-54-9502",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/lilyLoloFoundation_qen5an.jpg"
+  },
+  {
+    "brand": "bareMinerals",
+    "name": "Liquid Lipcolor",
+    "price": 18.52,
+    "description": "A long-wearing, cream-to-matte colour with a lightweight, no-tack texture. Full coverage pigments are suspended in a silky formula that glides over lips effortlessly, then dries to a long-wearing, natural matte finish.",
+    "sku": "868-50-9482",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216462/VeganStore/bareMineralsLiquidLipcolor_uhpjnf.jpg"
+  },
+  {
+    "brand": "Anastasia",
+    "name": "Pigment Palette",
+    "price": 31.43,
+    "description": "The Anastasia Beverly Hills Mini Norvina Pro Pigment Palette Vol. 1 features 9 full-size, high-performance pressed pigments with maximum payoff, carefully curated by Norvina herself. From standout metallics and brights mattes to Norvina’s signature purples, these shades allow for a broad range of artistic makeup looks.",
+    "sku": "534-20-2675",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216462/VeganStore/anastasiaPalette_yea7oa.jpg"
+  },
+  {
+    "brand": "Brushworks",
+    "name": "Powder Brush",
+    "price": 6.75,
+    "description": "Brushworks HD Powder Blush Brush - the large head and long fibres pick up enough product to allow a medium to full coverage. This makes it ideal for applying blush to the apples of your cheeks and setting powder where needed. The rounded shape and fluffy fibres ensure a seamlessly natural makeup finish.",
+    "sku": "797-94-5844",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/brushworksPowderblush_f9qujm.jpg"
+  },
+  {
+    "brand": "Anastasia",
+    "name": "Dewy Set",
+    "price": 27.24,
+    "description": "A coconut-vanilla-scented setting spray that seamlessly blends products together as it sets makeup leaving the complexion with a dewy (never oily), radiant finish. This gentle mist is ideal for those with dry skin or those who want to achieve the ultimate dewy glow.",
+    "sku": "803-74-3669",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/anastasiaDewyset_vyrrhp.jpg"
+  },
+  {
+    "brand": "e.l.f.",
+    "name": "Finish Foundation",
+    "price": 5.25,
+    "description": "This full-coverage and oil-free e.l.f. Flawless Finish Foundation blends in naturally for a beautiful semi-matte finish. The foundation includes UVA/UVB SPF 15 sun protection to protect your skin.",
+    "sku": "234-56-6575",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/elfFinishfoundation_wh0yiw.jpg"
+  },
+  {
+    "brand": "e.l.f.",
+    "name": "Contour Palette Light/Medium",
+    "price": 7.99,
+    "description": "NullaSculpt, shade, and brighten with this 4 shade powder e.l.f. Contour Palette in Light/Medium. It’s customisable to match your skin tone and is infused with vitamin E. Get a gorgeous, nourished complexion all day!",
+    "sku": "204-74-3402",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/elfCountourPalette_lowqck.jpg"
+  },
+  {
+    "brand": "Barry M",
+    "name": "Lip Paint",
+    "price": 4.99,
+    "description": "Barry M's gorgeous Satin Super Slick Lip Paints have been formulated using Shea Butter & Vitamin E to create a lustrously dewy formula, perfect for a polished pout with intense colour pay-off. In an array of perfectly on trend shades, they’re easy to spot in their sleek gun metal packs.",
+    "sku": "150-37-2137",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/barrysatinLipstick_tqlke1.jpg"
+  },
+  {
+    "brand": "bareMinerals",
+    "name": "Loose Foundation",
+    "price": 23.39,
+    "description": "The lightweight, long-wear loose foundation comes in 30 shades, suitable for all skintones and skin types. Made with just five non-drying mineral ingredients, the natural foundation provides buildable coverage. Ideal for sensitive skin.",
+    "sku": "306-80-4996",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216462/VeganStore/bareMineralsFoundation_lsuwjm.jpg"
+  },
+  {
+    "brand": "3INA",
+    "name": "Cactus Cleansing Mat",
+    "price": 4.75,
+    "description": "Revitalise your makeup brushes with this cool 3INA Cactus Cleansing Mat. Rows of silicone ridges get right into action, bringing your brushes back to life. Just add brush cleanser, scrub, rinse, and they'll be beauty ready.",
+    "sku": "726-81-7094",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216464/VeganStore/thrinaCactus_wa7lqt.jpg"
+  },
+  {
+    "brand": "e.l.f.",
+    "name": " Multi Blender Massager",
+    "price": 14.34,
+    "description": "The e.l.f. Beautifully Precise Multi Blender Massager No.102 is a unique, multi-directional curved massager brush that seamlessly sweeps over the facial contours to sculpt, shape, and blend in foundation, powder, or bronzer flawlessly.",
+    "sku": "737-21-7041",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/elfBlender_manfaq.jpg"
+  },
+  {
+    "brand": "Physicians",
+    "name": "Eye Makeup Remover",
+    "price": 5.99,
+    "description": "A nourishing and non-irritating eye makeup remover that gently removes the most stubborn waterproof eye makeup without any greasy residue. Conditioning, Coconut Milk-infused creamy formula effectively removes makeup while keeping the delicate eye area silky and smooth.",
+    "sku": "195-11-7465",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/physiciansMakeupremover_arjh0v.jpg"
+  },
+  {
+    "brand": "Lumene",
+    "name": "Watercolor Blush",
+    "price": 22.58,
+    "description": "Add a healthy flush of colour to your complexion with this weightless Lumene Invisible Illumination Watercolor Blush. The pigmented, buildable texture contains Pure Arctic Spring Water, antioxidant-rich Wild Arctic Cloudberry Extract to brighten, hydrate and perfect your skin for a luminous complexion.",
+    "sku": "892-41-1075",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/lumeneIllumination_f4llod.jpg"
+  },
+  {
+    "brand": "Anastasia",
+    "name": "Sugar Glow Kit",
+    "price": 41.99,
+    "description": "Anastasia Beverly Hills Sugar Glow Kit: a collection of four metallic powder highlighters for intense luminosity. Features four shades for highlighting eyes, face and body with buildable metallic-lustre formula.",
+    "sku": "318-91-5587",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216462/VeganStore/anastasiaSugarglow_vvvm7w.jpg"
+  },
+  {
+    "brand": "NIP+FAB",
+    "name": "Eyeshadow Palette",
+    "price": 8.85,
+    "description": "Featuring 12 amber-hued shades – including warm browns, burnt oranges, smoky purples and deep red eyeshadows. This eyeshadow palette has everything you need to create sultry daytime looks, heated smoky night-time looks and everything in between.",
+    "sku": "350-64-1431",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/nipfabEyeShadow_qqrx6s.jpg"
+  },
+  {
+    "brand": "INIKA",
+    "name": "Long Lash Mascara",
+    "price": 20.99,
+    "description": "INIKA Vegan Long Lash Mascara provides ultra-long lashes and a glamorous look. Lengthening formula helps to define lashes while nourishing and protecting. 100% plant derived with extra-long staying power.",
+    "sku": "241-19-8416",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/inikaMaskara_gy8tdk.jpg"
+  },
+  {
+    "brand": "Barry M",
+    "name": "Cosmic Lights Palette",
+    "price": 7.99,
+    "description": "Discover a glow that’s out of this world with the Barry M Cosmic Lights Palette! In 6 kaleidoscopic cream and powder shades, there’s one for every look.",
+    "sku": "593-58-7029",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216462/VeganStore/barrymCosmicpalette_ko2o73.jpg"
+  },
+  {
+    "brand": "3INA",
+    "name": "The Lipgloss",
+    "price": 7.95,
+    "description": "3INA The Lip Gloss is your shimmer-on, vinyl shine, non-stick lacquer for a glassy finish, while moisturising oils keep lips comfortably hydrated.",
+    "sku": "135-28-0671",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216464/VeganStore/thrinaLipgloss_cqmcpx.jpg"
+  },
+  {
+    "brand": "3INA",
+    "name": "Glam Rock Eyeshadow Palette",
+    "price": 20.95,
+    "description": "Transform your look with the 3INA Glam Rock Eyeshadow Palette. Contains 10 electrifying shades of matte and metallic finishes packed to burst with intense pigments in a soft, light texture.",
+    "sku": "738-62-1356",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216464/VeganStore/thrinaGlameyeshadow_jdo6np.jpg"
+  },
+  {
+    "brand": "Brushworks",
+    "name": "Make Up Sponge",
+    "price": 4.99,
+    "description": "This latex free hydrophilic sponge is ultra-soft, non-sensitive, flake resistant and long wearing. It expands with water to make blending easier and absorb less make up, holding only what is absolutely necessary.",
+    "sku": "263-43-7868",
+    "mediaUrl": "https://res.cloudinary.com/dvn52rfzx/image/upload/v1582216463/VeganStore/brushworksSponge_vtiiw5.jpg"
+  }
+]
