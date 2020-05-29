@@ -5,21 +5,25 @@ import { Layout, Menu, Drawer, Icon } from "antd"
 import { MenuOutlined, AlignCenterOutlined } from "@ant-design/icons"
 import NProgress from "nprogress"
 import Navbar from "./Navbar"
-import LotusBlue from "../../public/lotus_blue.svg"
+import LotusBlue from "../../public/images/lotus_blue.svg"
 
 Router.onRouteChangeStart = () => NProgress.start()
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
-function Header() {
+function Header({ user }) {
   const { Header, Content, Footer } = Layout
-  const user = true
+  const isAdmin = user && user.role === "admin"
+  const isRoot = user && user.role === "root"
+  const isRootOrAdmin = isRoot || isAdmin
+
+  // For determining the height of the Drawer(number of items in menu vary)
+  const height = (user) => (user ? 280 : 200)
 
   const [toggle, setToggle] = useState(false)
 
   const showDrawer = () => {
-    setToggle(prevToggle => !prevToggle)
-    console.log(toggle)
+    setToggle((prevToggle) => !prevToggle)
   }
 
   return (
@@ -30,7 +34,7 @@ function Header() {
           <LotusBlue />
         </div>
       </Link>
-      <Navbar mode='horizontal' />
+      <Navbar mode='horizontal' user={user} isRootOrAdmin={isRootOrAdmin} />
 
       <Drawer
         placement='top'
@@ -40,13 +44,13 @@ function Header() {
         drawerStyle={{
           background: "#f79992",
           color: "fff",
-          paddingBottom: "2em",
+          // paddingBottom: "1em",
         }}
-        height={300}
+        height={height}
         onClick={showDrawer}
         visible={toggle}
       >
-        <Navbar mode='inline' />
+        <Navbar mode='inline' user={user} isRootOrAdmin={isRootOrAdmin} />
       </Drawer>
     </Header>
   )

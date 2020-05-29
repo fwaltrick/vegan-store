@@ -9,10 +9,12 @@ import {
   LoginOutlined,
   UserAddOutlined,
 } from "@ant-design/icons"
+import { handleLogout } from "../../utils/auth"
+import { useRouter } from "next/router"
 
 function Navbar(props) {
-  const { mode } = props
-  const user = true
+  const router = useRouter()
+  const { mode, user, isRootOrAdmin } = props
 
   return (
     <Menu
@@ -20,6 +22,7 @@ function Navbar(props) {
       theme='dark'
       mode={mode}
       style={{ lineHeight: "64px" }}
+      selectedKeys={router.pathname}
     >
       {/* <Menu.Item key='home'>
           <Link href='/'>
@@ -38,7 +41,7 @@ function Navbar(props) {
         </Link>
       </Menu.Item>
 
-      {user && (
+      {isRootOrAdmin && (
         <Menu.Item key='add'>
           <Link href='/add'>
             <div className={`items-${mode}`}>
@@ -60,21 +63,19 @@ function Navbar(props) {
         </Menu.Item>
       )}
 
-      {user && (
-        <Menu.Item key='cart'>
-          <Link href='/cart'>
-            <div className={`items-${mode}`}>
-              <ShoppingCartOutlined style={{ fontSize: "1.8em" }} />
-              <span>My Cart</span>
-            </div>
-          </Link>
-        </Menu.Item>
-      )}
+      <Menu.Item key='cart'>
+        <Link href='/cart'>
+          <div className={`items-${mode}`}>
+            <ShoppingCartOutlined style={{ fontSize: "1.8em" }} />
+            <span>My Cart</span>
+          </div>
+        </Link>
+      </Menu.Item>
 
       {user && (
-        <Menu.Item key='logout'>
-          <div className={`sign-items-${mode}`}>
-            <LogoutOutlined style={{ fontSize: "1.3em" }} />
+        <Menu.Item onClick={handleLogout} key='logout'>
+          <div className={`items-${mode}`}>
+            <LogoutOutlined style={{ fontSize: "1.8em" }} />
             <span>Logout</span>
           </div>
         </Menu.Item>
@@ -82,19 +83,23 @@ function Navbar(props) {
 
       {!user && (
         <Menu.Item key='login'>
-          <div className={`sign-items-${mode}`}>
-            <LoginOutlined style={{ fontSize: "1.3em" }} />
-            <span>Login</span>
-          </div>
+          <Link href='/login'>
+            <div className={`items-${mode}`}>
+              <LoginOutlined style={{ fontSize: "1.8em" }} />
+              <span>Login</span>
+            </div>
+          </Link>
         </Menu.Item>
       )}
 
       {!user && (
         <Menu.Item key='signup'>
-          <div className={`sign-items-${mode}`}>
-            <UserAddOutlined style={{ fontSize: "1.3em" }} />
-            <span>Sign Up</span>
-          </div>
+          <Link href='/signup'>
+            <div className={`items-${mode}`}>
+              <UserAddOutlined style={{ fontSize: "1.8em" }} />
+              <span>Sign Up</span>
+            </div>
+          </Link>
         </Menu.Item>
       )}
     </Menu>

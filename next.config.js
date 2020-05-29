@@ -35,8 +35,8 @@ module.exports = withCss({
   env: {
     MONGO_SRV:
       "mongodb+srv://fabertrick:chan8277@veganstore-pnppr.mongodb.net/test?retryWrites=true&w=majority",
-    JWT_SECRET: "<insert-jwt-secret>",
+    JWT_SECRET: "star13me",
     CLOUDINARY_URL: "https://api.cloudinary.com/v1_1/dvn52rfzx/image/upload",
-    STRIPE_SECRET_KEY: "<insert-stripe-secret-key>",
+    STRIPE_SECRET_KEY: "sk_test_ZkHGQFF1SLPkaJnOdCrwIKEC00HIEcT8qB",
   },
 })

@@ -4,11 +4,7 @@ import Link from "next/link"
 function ProductsList({ products }) {
   return (
     <List
-      style={{
-        maxWidth: "1600px",
-        padding: "15px",
-        background: "#ebeae4",
-      }}
+      className='products-container'
       grid={{
         gutter: 15,
         xs: 1,
@@ -19,7 +15,7 @@ function ProductsList({ products }) {
         xxl: 4,
       }}
       dataSource={products}
-      renderItem={item => (
+      renderItem={(item) => (
         <List.Item
           style={{
             display: "flex",
@@ -45,7 +41,7 @@ function ProductsList({ products }) {
                   <span>{item.name}</span>
                 </div>
                 <div className='card-price'>
-                  <span>€ {item.price}</span>
+                  <span>€ {item.price.toFixed(2)}</span>
                 </div>
               </div>
             </Card>

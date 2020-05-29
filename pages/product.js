@@ -3,11 +3,11 @@ import ProductSummary from "../components/Product/ProductSummary"
 import baseUrl from "../utils/baseUrl"
 import ProductAttributes from "../components/Product/DeleteProduct"
 
-function Product({ product }) {
+function Product({ product, user }) {
   return (
-    <>
-      <ProductSummary {...product} />
-    </>
+    <div>
+      <ProductSummary user={user} {...product} />
+    </div>
   )
 }
 

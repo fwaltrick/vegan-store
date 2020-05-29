@@ -1,7 +1,6 @@
 import { Button, Modal } from "antd"
 import { DeleteOutlined } from "@ant-design/icons"
 import React, { useState } from "react"
-import Vegan from "../../public/vegan.svg"
 import axios from "axios"
 import baseUrl from "../../utils/baseUrl"
 import { useRouter } from "next/router"

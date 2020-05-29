@@ -1,7 +1,7 @@
 import { Button, Modal } from "antd"
 import { DeleteOutlined } from "@ant-design/icons"
 import AddProductToCart from "./AddProductToCart"
-import Vegan from "../../public/vegan.svg"
+import Vegan from "../../public/images/vegan.svg"
 import React, { useState } from "react"
 import DeleteProduct from "./DeleteProduct"
 
@@ -13,7 +13,12 @@ function ProductSummary({
   sku,
   description,
   brand,
+  user,
 }) {
+  const isAdmin = user && user.role === "admin"
+  const isRoot = user && user.role === "root"
+  const isRootOrAdmin = isRoot || isAdmin
+
   return (
     <div className='product-container'>
       <div className='product-brand'>
@@ -25,10 +30,10 @@ function ProductSummary({
       </div>
 
       <div className='product-price'>
-        <p>€{price}</p>
+        <p>€{price.toFixed(2)}</p>
       </div>
       <div className='product-cart'>
-        <AddProductToCart productId={_id} />
+        <AddProductToCart user={user} productId={_id} />
       </div>
 
       <div className='product-img'>
@@ -38,7 +43,8 @@ function ProductSummary({
       <div className='product-description'>
         <p> {description}</p>
         <div className='product-group'>
-          <DeleteProduct _id={_id} />
+          {/* Only admin or root are able to delete product */}
+          {isRootOrAdmin && <DeleteProduct user={user} _id={_id} />}
           <Vegan className='logo-vegan' />
         </div>
       </div>
