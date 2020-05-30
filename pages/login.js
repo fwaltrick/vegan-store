@@ -145,7 +145,7 @@ function Login() {
             message='No account yet?'
             description={
               <Link href='/signup'>
-                <a>Sign up here.</a>
+                <a style={{ color: "#3dbd7d" }}>Sign up here.</a>
               </Link>
             }
           />

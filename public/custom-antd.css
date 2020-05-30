@@ -16244,7 +16244,7 @@ textarea.ant-mentions {
 }
 .ant-menu.ant-menu-dark .ant-menu-item-selected,
 .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
-  background-color: #3dbd7d;
+  background-color: #3dbd7d !important;
 }
 .ant-menu-dark .ant-menu-item-disabled,
 .ant-menu-dark .ant-menu-submenu-disabled,

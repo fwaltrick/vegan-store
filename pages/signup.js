@@ -163,7 +163,7 @@ function SignUp() {
             message='Do you have already an account?'
             description={
               <Link href='/login'>
-                <a>Login here.</a>
+                <a style={{ color: "#3dbd7d" }}>Login here.</a>
               </Link>
             }
           />
