@@ -32,6 +32,7 @@ module.exports = withCss({
 
     return config
   },
+  stats: "errors-only",
   env: {
     MONGO_SRV:
       "mongodb+srv://fabertrick:chan8277@veganstore-pnppr.mongodb.net/test?retryWrites=true&w=majority",

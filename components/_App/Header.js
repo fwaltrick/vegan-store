@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import Link from "next/link"
 import Router, { useRouter } from "next/router"
-import { Layout, Menu, Drawer, Icon } from "antd"
-import { MenuOutlined, AlignCenterOutlined } from "@ant-design/icons"
+import { Layout, Drawer } from "antd"
+import { MenuOutlined } from "@ant-design/icons"
 import NProgress from "nprogress"
 import Navbar from "./Navbar"
 import LotusBlue from "../../public/images/lotus_blue.svg"
@@ -18,7 +18,7 @@ function Header({ user }) {
   const isRootOrAdmin = isRoot || isAdmin
 
   // For determining the height of the Drawer(number of items in menu vary)
-  const height = (user) => (user ? 280 : 200)
+  const height = (user) => (user ? 280 : 230)
 
   const [toggle, setToggle] = useState(false)
 
@@ -39,14 +39,11 @@ function Header({ user }) {
       <Drawer
         placement='top'
         closable={false}
-        // destroyOnClose={true}
-        className='menu-drawer'
         drawerStyle={{
           background: "#f79992",
           color: "fff",
-          // paddingBottom: "1em",
         }}
-        height={height}
+        height={height(user)}
         onClick={showDrawer}
         visible={toggle}
       >

@@ -48,16 +48,19 @@ function AccountPermissions() {
       title: "Email",
       dataIndex: "email",
       key: "email",
+      responsive: ["md"],
     },
     {
       title: "Joined",
       dataIndex: "joined",
       key: "joined",
+      responsive: ["lg"],
     },
     {
       title: "Updated",
       dataIndex: "updated",
       key: "updated",
+      responsive: ["lg"],
     },
     {
       title: "Role",
@@ -88,12 +91,7 @@ function AccountPermissions() {
         &nbsp; Users Permissions
       </h4>
 
-      <Table
-        size='small'
-        columns={columns}
-        style={{ background: "#ebeae4" }}
-        dataSource={mapUsers}
-      ></Table>
+      <Table columns={columns} dataSource={mapUsers} />
     </>
   )
 }

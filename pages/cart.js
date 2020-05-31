@@ -50,7 +50,7 @@ function Cart({ products, user }) {
 
   return (
     <div className='background-shape background-shape--violet'>
-      <div className='container'>
+      <div className='container cart-container'>
         <Spin spinning={loading}>
           <CartItemList
             success={success}

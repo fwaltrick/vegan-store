@@ -88,26 +88,30 @@ header {
   width: 100%;
   align-items: center;
   justify-content: center;
-  animation: fadein ease 1.2s;
+  animation: fadein ease 1s;
 }
 
 .background-shape--green {
-  background: var(--gray) url("/images/shape-green.svg") no-repeat left center;
+  background: var(--gray) no-repeat left center;
+  background-image: url("/images/shape-green.svg");
   background-size: 17em;
 }
 
 .background-shape--yellow {
-  background: var(--gray) url("/images/shape-yellow.svg") no-repeat left center;
+  background: var(--gray) no-repeat left center;
+  background-image: url("/images/shape-yellow.svg");
   background-size: 22em;
 }
 
 .background-shape--pink {
-  background: var(--gray) url("/images/shape-pink.svg") no-repeat right center;
+  background: var(--gray) no-repeat right center;
+  background-image: url("/images/shape-pink.svg");
   background-size: 17em;
 }
 
 .background-shape--violet {
-  background: var(--gray) url("/images/shape-violet.svg") no-repeat right center;
+  background: var(--gray) no-repeat right center;
+  background-image: url("/images/shape-violet.svg");
   background-size: 22em;
 }
 
@@ -191,7 +195,7 @@ header {
 
 /* Nav */
 .menu {
-  background-color: var(--menuBg);
+  background-color: var(--menuBg) !important;
   color: var(--bodyBg);
 }
 
@@ -520,6 +524,10 @@ header {
   .footer {
     padding: 1.6em;
     font-size: 0.5rem;
+  }
+
+  .cart-container {
+    background: rgba(255, 255, 255, 0.5);
   }
 
   .products-background,

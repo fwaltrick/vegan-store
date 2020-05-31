@@ -43,6 +43,13 @@ function SignUp() {
     wrapperCol: { span: 18 },
   }
 
+  const tailLayout = {
+    wrapperCol: {
+      xs: { span: 24, offset: 0 },
+      sm: { span: 18, offset: 6 },
+    },
+  }
+
   const fail = (error) => {
     message.config({
       top: 65,
@@ -139,7 +146,7 @@ function SignUp() {
               </Form.Item>
             </Spin>
 
-            <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 6 }}>
+            <Form.Item {...tailLayout}>
               <Button
                 htmlType='submit'
                 disabled={disabled || loading}
