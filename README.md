@@ -8,6 +8,7 @@ An e-commerce app built with React/Next.js, Node, Express, MongoDB (MERN stack) 
 * Process payments with Stripe API
 * Management of database user roles (root, admin or user) in MongoDB
 * Database maintainance with full CRUD operations
+* Complete responsive
 
 ## Visit the site
 https://vegan-beauty-shop.herokuapp.com/
