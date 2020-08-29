@@ -1,6 +1,6 @@
 /* eslint-disable */
 const withCss = require("@zeit/next-css")
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = withCss({
   webpack: (config, { isServer }) => {
