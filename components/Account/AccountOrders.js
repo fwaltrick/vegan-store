@@ -1,11 +1,9 @@
 import { Collapse, Avatar, List, Tag } from "antd"
 import { CalendarOutlined, ShoppingOutlined } from "@ant-design/icons"
-import { useRouter } from "next/router"
 import { formatDate } from "../../utils/formatDate"
 
 function AccountOrders({ orders }) {
   const { Panel } = Collapse
-  const router = useRouter()
 
   // mapping all orders from one client
   const mapOrders = orders.map((order) => {
@@ -60,10 +58,6 @@ function AccountOrders({ orders }) {
       ) : (
         <Collapse>{mapOrders}</Collapse>
       )}
-
-      {/* <Button type='primary' onClick={() => router.push("/products")}>
-        View Our Products
-      </Button> */}
     </>
   )
 }

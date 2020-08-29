@@ -1,7 +1,6 @@
 import Head from "next/head"
 import Header from "./Header"
-import { Layout, Menu } from "antd"
-import Link from "next/link"
+import { Layout } from "antd"
 
 import {
   LinkedinOutlined,

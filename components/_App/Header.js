@@ -12,7 +12,7 @@ Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
 function Header({ user }) {
-  const { Header, Content, Footer } = Layout
+  const { Header } = Layout
   const isAdmin = user && user.role === "admin"
   const isRoot = user && user.role === "root"
   const isRootOrAdmin = isRoot || isAdmin

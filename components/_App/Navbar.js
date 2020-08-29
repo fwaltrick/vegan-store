@@ -1,4 +1,4 @@
-import { Menu, Icon } from "antd"
+import { Menu } from "antd"
 import Link from "next/link"
 import {
   GiftOutlined,

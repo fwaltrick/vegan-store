@@ -1,17 +1,11 @@
 import { Result, Button, List, Avatar, Tooltip, message } from "antd"
 import { ShoppingOutlined, CloseOutlined } from "@ant-design/icons"
 import { useRouter } from "next/router"
-import Link from "next/link"
 
 function CartItemList({ products, user, handleRemoveFromCart, success }) {
   const router = useRouter()
 
   if (success) {
-    // message.config({
-    //   top: 65,
-    //   duration: 5,
-    // })
-    // message.success(`Thank you for your order!`)
     return (
       <Result
         status='success'

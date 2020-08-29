@@ -312,7 +312,7 @@ mark {
 }
 ::selection {
   color: #fff;
-  background: #3dbd7d;
+  background: #3dbd7d !important;
 }
 .clearfix::before {
   display: table;
@@ -15390,7 +15390,7 @@ textarea.ant-mentions {
   color: rgba(0, 0, 0, 0.65);
 }
 .ant-menu-item > .ant-badge > a:hover {
-  color: #3dbd7d;
+  color: #3dbd7d !important;
 }
 .ant-menu-item-divider {
   height: 1px;
@@ -16223,7 +16223,7 @@ textarea.ant-mentions {
   background: #fff;
 }
 .ant-menu-dark .ant-menu-item:hover {
-  background-color: transparent;
+  background-color: #3dbd7d !important;
 }
 .ant-menu-dark .ant-menu-item-selected {
   color: #fff;

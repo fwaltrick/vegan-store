@@ -1,4 +1,4 @@
-import { Button, Divider, Avatar, Tag } from "antd"
+import { Divider, Avatar, Tag } from "antd"
 import { formatDate } from "../../utils/formatDate"
 
 function AccountHeader({ role, email, name, createdAt }) {

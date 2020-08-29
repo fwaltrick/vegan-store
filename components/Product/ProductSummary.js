@@ -1,8 +1,6 @@
-import { Button, Modal } from "antd"
-import { DeleteOutlined } from "@ant-design/icons"
 import AddProductToCart from "./AddProductToCart"
 import Vegan from "../../public/images/vegan.svg"
-import React, { useState } from "react"
+import React from "react"
 import DeleteProduct from "./DeleteProduct"
 
 function ProductSummary({
@@ -10,7 +8,6 @@ function ProductSummary({
   mediaUrl,
   _id,
   price,
-  sku,
   description,
   brand,
   user,
