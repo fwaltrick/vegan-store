@@ -12,7 +12,7 @@
     "@svgr/webpack": "^5.4.0",
     "@zeit/next-css": "^1.0.1",
     "antd": "^4.6.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bcrypt": "^4.0.1",
     "customize-cra": "^0.9.1",
     "imagemin-svgo": "^8.0.0",
