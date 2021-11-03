@@ -32,7 +32,7 @@
     "shortid": "^2.2.15",
     "stripe": "^7.15.0",
     "uuid": "^3.4.0",
-    "validator": "^13.1.1"
+    "validator": "^13.7.0"
   },
   "license": "ISC",
   "devDependencies": {
