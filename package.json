@@ -20,7 +20,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongo-tools": "^1.0.0",
     "mongoose": "^5.10.2",
-    "next": "^9.5.2",
+    "next": "^13.0.3",
     "next-compose-plugins": "^2.2.0",
     "next-on-netlify": "^2.3.2",
     "nookies": "^2.4.0",
